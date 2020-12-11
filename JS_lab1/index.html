@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">    
+    <!-- <button class="btn" id="btn">Popup JS</button> -->
+    <a class="btn" id="btn">Popup JS</a>
+    <a class="popup_link btn" href="#popup">Popup CSS</a>
+    <div class="image"></div>
+    <div id="popup" class="popup">
+      <a href="#container" class="popup_empty"></a>
+      <div class="popup_body">
+        <div class="popup_content">          
+          <div class="popup_title">Modal Window</div>
+          <div class="popup_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna 
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+          <a href="##container" class="popup_close">X</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+  let btn = document.getElementById("btn")
+  btn.addEventListener('click', function(){
+    swal("Good job!", "You clicked the button!", "success");  
+  } );
+</script>  
+</body>
+</html>
